@@ -165,7 +165,7 @@ Wash your face with the Acne Cleanser every evening only; making sure to avoid t
 4. 2-3-5 Rehydrating Serum<br>
 5. Moisturising Repair Milk<br><br>`,
       image: product8,
-      link: "https://shop.eloclaire.com/acnegel",
+      link: "https://shop.eloclaire.com/acnekit",
     },
   ];
 
