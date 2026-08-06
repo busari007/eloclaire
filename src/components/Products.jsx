@@ -27,6 +27,7 @@ export default function Products() {
 Apply 4 drops on your face immediately after using the toner.
 `,
       image: product1,
+      link: "https://shop.eloclaire.com/serum",
     },
     {
       name: "Barrier Repair Toner",
@@ -46,6 +47,7 @@ It is applied directly onto the wet face immediately after each shower.<br><br>
 Please note, the toner contains NO alcohol or synthetic fragrance.
 `,
       image: product3,
+      link: "https://shop.eloclaire.com/repairtoner",
     },
     {
       name: "Moisturising Repair Milk",
@@ -74,6 +76,7 @@ The Repair Face Milk contains NO synthetic perfume or colorant.<br><br>
 A sufficient quantity is applied immediately after applying the Òmose serum. Alternatively, it may be applied immediately after stepping out of the shower, on still wet face.
 `,
       image: product2,
+      link: "https://shop.eloclaire.com/milk",
     },
     {
       name: "Gentle Gel cleanser",
@@ -94,6 +97,7 @@ Do you want the dewy look?? Then you need to add it to your daily routine i.e. u
 Apply a little quantity to your wet face and pass it all over; including your neck and behind your ears. Make sure to rinse it off completely immediately afterwards with cool water.
 `,
       image: product6,
+      link: "https://shop.eloclaire.com/facegel",
     },
     {
       name: "Facial gel cleanser (regular size)",
@@ -101,6 +105,7 @@ Apply a little quantity to your wet face and pass it all over; including your ne
       description:
         "Same product, different size",
       image: product5,
+      link: "https://shop.eloclaire.com/facegel",
     },
     {
       name: "Facial gel cleanser (economy size)",
@@ -108,6 +113,7 @@ Apply a little quantity to your wet face and pass it all over; including your ne
       description:
         "The small size is travel friendly because it is small enough to pass through customs at any international airport.",
       image: product4,
+      link: "https://shop.eloclaire.com/facegel",
     },
       {
       name: "Acne Cleanser",
@@ -132,6 +138,7 @@ a powerfully effective ingredient that works by dissolving the sebum that clogs 
 Wash your face with the Acne Cleanser every evening only; making sure to avoid the eye area. Rinse off immediately afterwards with warm to cool water and moisturise at once.
 `,
       image: product9,
+      link: "https://shop.eloclaire.com/acnegel",
     },
     {
       name: "Hydrating Glow Kit",
@@ -144,6 +151,7 @@ Wash your face with the Acne Cleanser every evening only; making sure to avoid t
 3. 2-3-5 Rehydrating Serum<br>
 4. Moisturising Repair Milk<br><br>`,
       image: product7,
+      link: "https://shop.eloclaire.com/brightening",
     },
     {
       name: "Acne Kit (non-inflammatory)",
@@ -157,6 +165,7 @@ Wash your face with the Acne Cleanser every evening only; making sure to avoid t
 4. 2-3-5 Rehydrating Serum<br>
 5. Moisturising Repair Milk<br><br>`,
       image: product8,
+      link: "https://shop.eloclaire.com/acnegel",
     },
   ];
 
@@ -200,17 +209,22 @@ Wash your face with the Acne Cleanser every evening only; making sure to avoid t
 
                     <div className="flex flex-col md:flex-row mt-6 md:mt-2 items-center md:items-start justify-between">
                       <div className="w-full md:w-[45%] xl:w-[45%] h-60 md:h-90 flex-shrink-0 mx-auto sticky top-0">
-                        <img
-                          src={item.image}
-                          className="object-cover rounded-xl w-full h-full"
-                          alt={item.name}
-                        />
+                        
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                          <img
+                            src={item.image}
+                            className="object-cover rounded-xl w-full h-full"
+                            alt={item.name}
+                          />
+                        </a>
                       </div>
 
                       <div className="w-full md:w-[55%] xl:w-[55%] mx-auto text-center md:text-left md:m-3 md:mt-0 lg:m-0 px-2 mt-2 mb-1 overflow-y-auto">
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
                         <h2 className="text-lg md:text-xl font-semibold mb-1 text-center">
                           {item.name}
                         </h2>
+                        </a>
                         <h2 className="text-sm md:text-base font-semibold mb-2 text-green-700 text-center">
                           {item.price}
                         </h2>
