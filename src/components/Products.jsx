@@ -187,6 +187,7 @@ Wash your face with the Acne Cleanser every evening only; making sure to avoid t
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-x-20 xl:gap-y-24 p-4 w-[99%] md:w-full max-w-7xl mx-auto text-center">
           {items.map((item, index) => (
             <div key={index} className="relative">
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
               {/* Modal */}
               {product === index && (
                 <div
@@ -210,13 +211,13 @@ Wash your face with the Acne Cleanser every evening only; making sure to avoid t
                     <div className="flex flex-col md:flex-row mt-6 md:mt-2 items-center md:items-start justify-between">
                       <div className="w-full md:w-[45%] xl:w-[45%] h-60 md:h-90 flex-shrink-0 mx-auto sticky top-0">
                         
-                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                        
                           <img
                             src={item.image}
                             className="object-cover rounded-xl w-full h-full"
                             alt={item.name}
                           />
-                        </a>
+                        
                       </div>
 
                       <div className="w-full md:w-[55%] xl:w-[55%] mx-auto text-center md:text-left md:m-3 md:mt-0 lg:m-0 px-2 mt-2 mb-1 overflow-y-auto">
@@ -259,6 +260,7 @@ Wash your face with the Acne Cleanser every evening only; making sure to avoid t
                   Click to learn more...
                 </p>
               </div>
+              </a>
             </div>
           ))}
         </div>
